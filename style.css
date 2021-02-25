@@ -8,6 +8,7 @@
 
 body {
     background-color: var(--LBlue);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #mainNav {
@@ -18,3 +19,8 @@ footer{
     background-color: var(--DBlue);
 }
 
+#tutor-card{
+    border: var(--Gold) 10px solid !important;
+    background-color: var(--MBlue);
+    color: white;
+}
