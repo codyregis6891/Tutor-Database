@@ -1,0 +1,20 @@
+:root{
+    --DBlue: #003b5c;
+    --MBlue:#005587;
+    --LBlue:#8bb8e8;
+    --Orange: #ffb81c;
+    --Gold: #ffd100;
+}
+
+body {
+    background-color: var(--LBlue);
+}
+
+#mainNav {
+    background-color: var(--DBlue);
+}
+
+footer{
+    background-color: var(--DBlue);
+}
+
