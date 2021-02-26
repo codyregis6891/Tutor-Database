@@ -73,7 +73,6 @@ body {
 
 .row-resource {
     flex: 0 0 auto;
-    width: 0;
 }
 
 .form-control-resource {

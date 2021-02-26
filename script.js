@@ -22,4 +22,4 @@ function getYoutubeAPI(searchTerm) {
     });
 };
 
-getYoutubeAPI("bts")
+getYoutubeAPI("javascript")
