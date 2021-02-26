@@ -1,6 +1,39 @@
 body {
     background-color: aquamarine;
+    align-items: flex-start;
+    display: flex;
 }
+
+#main-section-resource {
+    padding: 5%;
+    border-radius: 20px;
+    width: 28rem;
+    top: 5%;
+    left: 0;
+    text-align: center;
+    color: white;
+}
+
+#main-section-resource option {
+    text-align: center;
+}
+
+.row-resource {
+    flex: 0 0 auto;
+    width: 0;
+}
+
+.form-control-resource {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+
 
 #main-section {
     position: fixed;
@@ -15,6 +48,12 @@ body {
 
 #main-section option {
     text-align: center;
+}
+
+.container {
+    flex-direction: row;
+
+
 }
 
 footer {
