@@ -1,3 +1,54 @@
+:root{
+    --DBlue: #003b5c;
+    --MBlue:#005587;
+    --LBlue:#8bb8e8;
+    --Orange: #ffb81c;
+    --Gold: #ffd100;
+}
+
+body {
+    background-image: url("https://dev2.cs.seas.ucla.edu/wp-content/uploads/dev2.cs/425-ucla_wingemphase2_main1.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+img{
+    opacity:.75;
+}
+
+img:hover {
+    opacity:1.0;
+}
+
+#mainNav {
+    background-color: var(--DBlue);
+}
+
+footer{
+    background-color: var(--DBlue);
+}
+
+#tutor-card{
+    border: var(--DBlue) 10px solid !important;
+    background-color: var(--MBlue);
+    color: white;
+    margin-top: 50px;
+}
+
+button {
+    background-color: var(--Orange) !important; 
+    opacity: .75;
+    /* color:var(--MBlue) ; */
+
+}
+
+button:hover {
+    opacity:1.0;
+}
+
+
 body {
     background-color: aquamarine;
     align-items: flex-start;
@@ -68,9 +119,10 @@ footer {
 }
 
 a {
+    text-decoration: none;
     color: aqua;
 }
 
 a:hover {
-    color: coral;
+    color: coral !important;
 }
