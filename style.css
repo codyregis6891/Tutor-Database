@@ -56,11 +56,11 @@ body {
 }
 
 #main-section-resource {
-    padding: 5%;
-    border-radius: 20px;
-    width: 28rem;
-    top: 5%;
-    left: 0;
+    padding: 5% 5% 5% 5%;
+    border-radius: 4px;
+    position: absolute;
+    top: 74px;
+    width: 40rem;
     text-align: center;
     color: white;
 }
@@ -71,9 +71,6 @@ body {
 
 .row-resource {
     flex: 0 0 auto;
-}
-
-.form-control-resource {
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;

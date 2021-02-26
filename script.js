@@ -10,7 +10,7 @@ var searchContentEl = document.querySelector('#search-yt');
 // }
 
 function getYoutubeAPI(searchTerm) {
-    fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=surfing&key=AIzaSyAOJ6CvOZGZ_RiV0g5CnQB1SFeQthDvKlo&q=" + searchTerm + "&order=date")
+    fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=surfing&key=AIzaSyAOJ6CvOZGZ_RiV0g5CnQB1SFeQthDvKlo&q=" + searchTerm)
     .then(function(response) {
         return response.json();
     })
