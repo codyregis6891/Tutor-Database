@@ -29,9 +29,10 @@ footer {
 }
 
 a {
+    text-decoration: none;
     color: aqua;
 }
 
 a:hover {
-    color: coral;
+    color: coral !important;
 }
