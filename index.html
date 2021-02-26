@@ -15,6 +15,7 @@
     <title>Tutor Database</title>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger text-white" href="./index.html">Tutor Database</a>
@@ -30,7 +31,7 @@
             </div>
         </div>
     </nav>
-
+ 
     <div class="bg-secondary" id="main-section">
         <h1 class="display-4">Welcome</h1>
         <div class="form-group text-start">
@@ -50,13 +51,106 @@
     <footer class="bg-secondary text-white">
         <h3 class="display-6 text-uppercase">Our Friends</h3>
         <div id="footer-links">
-            <button class="btn btn-secondary" href="#github-modal"><i class="fab fa-github"></i></button>
-            <a href="#">W3 Schools</a>
-            <a href="#">Stack Overflow</a>
-            <a href="#">MDN</a>
-            <a href="#">Mozilla</a>
+            <button data-toggle="modal" class="btn btn-secondary" data-target="#github-modal"><i class="fab fa-github"></i></button>
+            <button data-toggle="modal" class="btn btn-secondary" data-target="#stack-modal"><i class="fab fa-stack-overflow"></i></button>
+            <button data-toggle="modal" class="btn btn-secondary" data-target="#youtube-modal"><i class="fab fa-youtube"></i></button>
+            <button data-toggle="modal" class="btn btn-secondary" data-target="#gitlab-modal"><i class="fab fa-gitlab"></i></button>
+            <button data-toggle="modal" class="btn btn-secondary" data-target="#google-modal"><i class="fab fa-google"></i></button>
         </div>
+
+        <div id="github-modal" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-center">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="stack-modal" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-center">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="youtube-modal" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-center">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="gitlab-modal" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-center">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="google-modal" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-center">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
     </footer>
+
+    
 
     
 
