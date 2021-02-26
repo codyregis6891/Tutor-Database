@@ -24,6 +24,9 @@ img:hover {
 
 #mainNav {
     background-color: var(--DBlue);
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 footer{
@@ -50,7 +53,6 @@ button:hover {
 
 
 body {
-    background-color: aquamarine;
     align-items: flex-start;
     display: flex;
 }
@@ -93,6 +95,9 @@ body {
     transform: translate(-50%, -50%);
     padding: 3%;
     border-radius: 20px;
+    border: var(--DBlue) 10px solid !important;
+    background-color: var(--MBlue);
+    color: white;
     text-align: center;
     color: white;
 }
@@ -118,11 +123,22 @@ footer {
     margin: 10px;
 }
 
-a {
-    text-decoration: none;
-    color: aqua;
+a:hover {
+    color: #ffd100 !important;
 }
 
-a:hover {
-    color: coral !important;
+.modal-backdrop {
+        background-color: #003b5c;
+}
+
+.footer-modal-header {
+    justify-content: center;
+}
+
+.footer-modal-footer {
+    justify-content: space-between;
+}
+
+.footer-modal-content {
+    background-color: #005587;
 }
