@@ -1,3 +1,29 @@
+
+$(document).ready(function(){
+    $('#schedule').on('click',function(){
+    $('.modal').show();
+})
+
+$('.close').on('click', function(){
+    $('.modal').hide();
+})
+})
+
+$("#dropdownMenuButton1").on('click', function(){
+    console.log("click");
+    
+})
+
+
+    
+    
+
+
+
+
+
+
+
 // add youtube api
 // add youtube search bar 
 // add result menu 
