@@ -1,4 +1,6 @@
 
+//tutor modal card scheduling function
+
 $(document).ready(function(){
     $('#schedule').on('click',function(){
     $('.modal-tutor').show();
@@ -14,31 +16,34 @@ $("#apptconfirm").on('click', function(){
 
     var timeInput= $("#timeInput").val();
     var apptDate = $("#dateselect").val();
-
-    $('#apptconfirm').hide();
     
-    var confirmMsg = $("<p></p>").text("Your appointment is scheduled for " + apptDate + "at " + timeInput);
+    $('#apptconfirm').hide();
 
-    $("#confirmdiv").append(confirmMsg);
+    console.log(timeInput)
+    console.log(apptDate)
+
+    if($('#dateselect').val() === '' || $('#timeInput').val()=== 'Choose a Time'){
+        
+        var failMsg = $("<p></p>").text("Please choose a date from the calendar and/or a time slot from the dropdown");
+        $("#confirmdiv").append(failMsg);
+        
+    }else {
+
+        var confirmMsg = $("<p></p>").text("Your appointment is scheduled for " + apptDate + "at " + timeInput);
+        $("#confirmdiv").append(confirmMsg);
+    };
+
+    
+
+    $("#apptconfirm").reset();
+    
+    
 
         
-})
+});
 
 
 
-
-    
-    
-
-
-
-
-
-
-
-// add youtube api
-// add youtube search bar 
-// add result menu 
 
 // add button id in HTML for youtube search
 var searchContentEl = document.querySelector('#search-yt');
