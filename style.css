@@ -118,6 +118,10 @@ body {
     margin-bottom: 106px;
 }
 
+#resource-content {
+    margin-bottom: 106px;
+}
+
 footer {
     text-align: center;
     position: absolute;
@@ -125,7 +129,7 @@ footer {
     width: 100%;
 }
 
-#tutor-footer {
+#tutor-footer, #resource-footer {
     position: fixed;
     bottom: 0;
     width: 100%;
