@@ -9,10 +9,22 @@ $('.close').on('click', function(){
 })
 })
 
-$("#dropdownMenuButton1").on('click', function(){
+$("#apptconfirm").on('click', function(){
     console.log("click");
+
+    var timeInput= $("#timeInput").val();
+    var apptDate = $("#dateselect").val();
+
+    $('#apptconfirm').hide();
     
+    var confirmMsg = $("<p></p>").text("Your appointment is scheduled for " + apptDate + "at " + timeInput);
+
+    $("#confirmdiv").append(confirmMsg);
+
+        
 })
+
+
 
 
     
