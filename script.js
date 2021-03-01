@@ -1,11 +1,11 @@
 
 $(document).ready(function(){
     $('#schedule').on('click',function(){
-    $('.modal').show();
+    $('.modal-tutor').show();
 })
 
 $('.close').on('click', function(){
-    $('.modal').hide();
+    $('.modal-tutor').hide();
 })
 })
 
