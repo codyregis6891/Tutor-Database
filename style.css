@@ -24,6 +24,9 @@ img:hover {
 
 #mainNav {
     background-color: var(--DBlue);
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 footer{
@@ -50,17 +53,17 @@ button:hover {
 
 
 body {
-    background-color: aquamarine;
     align-items: flex-start;
     display: flex;
 }
 
 #main-section-resource {
-    padding: 5%;
-    border-radius: 20px;
-    width: 28rem;
-    top: 5%;
-    left: 0;
+    padding: 2% 3% 2% 2%;
+    opacity: 0.7;
+    border-radius: 4px;
+    position: absolute;
+    top: 74px;
+    width: 24rem;
     text-align: center;
     color: white;
 }
@@ -71,10 +74,6 @@ body {
 
 .row-resource {
     flex: 0 0 auto;
-    width: 0;
-}
-
-.form-control-resource {
     padding: .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -93,6 +92,9 @@ body {
     transform: translate(-50%, -50%);
     padding: 3%;
     border-radius: 20px;
+    border: var(--DBlue) 10px solid !important;
+    background-color: var(--MBlue);
+    color: white;
     text-align: center;
     color: white;
 }
@@ -107,9 +109,19 @@ body {
 
 }
 
+#tutor-content {
+    margin-bottom: 106px;
+}
+
 footer {
     text-align: center;
     position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#tutor-footer {
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -118,13 +130,24 @@ footer {
     margin: 10px;
 }
 
-a {
-    text-decoration: none;
-    color: aqua;
+a:hover {
+    color: #ffd100 !important;
 }
 
-a:hover {
-    color: coral !important;
+.modal-backdrop {
+        background-color: #003b5c;
+}
+
+.footer-modal-header {
+    justify-content: center;
+}
+
+.footer-modal-footer {
+    justify-content: space-between;
+}
+
+.footer-modal-content {
+    background-color: #005587;
 }
 
 .modal {

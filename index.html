@@ -17,8 +17,7 @@
 <body>
     
 
-
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
 
         <div class="container">
             <a class="navbar-brand js-scroll-trigger text-white" href="./index.html">Tutor Database</a>
@@ -28,14 +27,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Student Login</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Tutor Login</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-white" href="#">Student Login</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-white" href="#">Tutor Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
  
-    <div class="bg-secondary" id="main-section">
+    <div id="main-section">
         <h1 class="display-4">Welcome</h1>
         <div class="form-group text-start">
             <label for="exampleFormControlSelect1">Choose a Subject:</label>
@@ -47,113 +46,106 @@
                 <option>Bootstrap</option>
             </select>
         </div>
-        <button type="button" class="btn btn-primary mt-1">Resources</button>
-        <button type="button" class="btn btn-info mt-1 text-white">Tutors</button>
+        <a href="./resource.html"><button type="button" id="loadResourcePage" class="btn btn-primary mt-1">Resources</button></a>
+        <a href="./tutorPage.html"><button type="button" id="loadTutorsPage" class="btn btn-info mt-1 text-white">Tutors</button></a>
     </div>
 
-    <footer class="bg-secondary text-white">
+    <footer class="text-white">
         <h3 class="display-6 text-uppercase">Our Friends</h3>
         <div id="footer-links">
-            <button data-toggle="modal" class="btn btn-secondary" data-target="#github-modal"><i class="fab fa-github"></i></button>
-            <button data-toggle="modal" class="btn btn-secondary" data-target="#stack-modal"><i class="fab fa-stack-overflow"></i></button>
-            <button data-toggle="modal" class="btn btn-secondary" data-target="#youtube-modal"><i class="fab fa-youtube"></i></button>
-            <button data-toggle="modal" class="btn btn-secondary" data-target="#gitlab-modal"><i class="fab fa-gitlab"></i></button>
-            <button data-toggle="modal" class="btn btn-secondary" data-target="#google-modal"><i class="fab fa-google"></i></button>
+            <button data-toggle="modal" class="btn text-white" data-target="#github-modal"><i class="fab fa-github"></i></button>
+            <button data-toggle="modal" class="btn text-white" data-target="#stack-modal"><i class="fab fa-stack-overflow"></i></button>
+            <button data-toggle="modal" class="btn text-white" data-target="#youtube-modal"><i class="fab fa-youtube"></i></button>
+            <button data-toggle="modal" class="btn text-white" data-target="#gitlab-modal"><i class="fab fa-gitlab"></i></button>
+            <button data-toggle="modal" class="btn text-white" data-target="#google-modal"><i class="fab fa-google"></i></button>
         </div>
 
-        <div id="github-modal" class="modal" tabindex="-1">
+        <div id="github-modal" class="modal footer-modal" tabindex="-1">
             <div class="modal-dialog modal-dialog-center">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-content footer-modal-content">
+                <div class="modal-header footer-modal-header">
+                  <h5 class="modal-title text-uppercase">Github</h5>
                 </div>
                 <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+                  <p>GitHub is a Git repository hosting service, but it adds many of its own features. While Git is a command line tool, GitHub provides a Web-based graphical interface. It also provides access control and several collaboration features, such as a wikis and basic task management tools for every project.</p>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer footer-modal-footer">
+                  <button type="button" class="btn text-white" data-dismiss="modal">Close</button>
+                  <a target="_blank" href="https://www.github.com"><button type="button" class="btn btn-primary">Visit Site</button></a>
                 </div>
               </div>
             </div>
         </div>
 
-        <div id="stack-modal" class="modal" tabindex="-1">
+        <div id="stack-modal" class="modal footer-modal" tabindex="-1">
             <div class="modal-dialog modal-dialog-center">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-content footer-modal-content">
+                <div class="modal-header footer-modal-header">
+                  <h5 class="modal-title text-uppercase">Stack Overflow</h5>
                 </div>
                 <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+                  <p>This coding website serves as a platform for users to ask and answer questions, and, through membership and active participation, to vote questions and answers up or down and edit questions and answers in a fashion similar to a wiki or Reddit.</p>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer footer-modal-footer">
+                  <button type="button" class="btn text-white" data-dismiss="modal">Close</button>
+                  <a href="https://www.stackoverflow.com" target="_blank"><button type="button" class="btn btn-primary">Visit Site</button></a>
                 </div>
               </div>
             </div>
         </div>
 
-        <div id="youtube-modal" class="modal" tabindex="-1">
+        <div id="youtube-modal" class="modal footer-modal" tabindex="-1">
             <div class="modal-dialog modal-dialog-center">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-content footer-modal-content">
+                <div class="modal-header footer-modal-header">
+                  <h5 class="modal-title text-uppercase">Youtube</h5>
                 </div>
                 <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+                  <p>YouTube is a video sharing service where users can watch, like, share, comment and upload their own videos. It is a great resource for tutorials and walkthroughs.</p>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer footer-modal-footer">
+                  <button type="button" class="btn text-white" data-dismiss="modal">Close</button>
+                  <a href="https://www.youtube.com" target="_blank"><button type="button" class="btn btn-primary">Visit Site</button></a>
                 </div>
               </div>
             </div>
         </div>
 
-        <div id="gitlab-modal" class="modal" tabindex="-1">
+        <div id="gitlab-modal" class="modal footer-modal" tabindex="-1">
             <div class="modal-dialog modal-dialog-center">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-content footer-modal-content">
+                <div class="modal-header footer-modal-header">
+                  <h5 class="modal-title text-uppercase">GitLab</h5>
                 </div>
                 <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+                  <p>GitLab is a web-based DevOps lifecycle tool that provides a Git-repository manager providing wiki, issue-tracking and continuous integration and deployment pipeline features.</p>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer footer-modal-footer">
+                  <button type="button" class="btn text-white" data-dismiss="modal">Close</button>
+                  <a href="https://www.gitlab.com" target="_blank"><button type="button" class="btn btn-primary">Visit Site</button></a>
                 </div>
               </div>
             </div>
         </div>
 
-        <div id="google-modal" class="modal" tabindex="-1">
+        <div id="google-modal" class="modal footer-modal" tabindex="-1">
             <div class="modal-dialog modal-dialog-center">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-content footer-modal-content">
+                <div class="modal-header footer-modal-header">
+                  <h5 class="modal-title text-uppercase">Google</h5>
                 </div>
                 <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+                  <p>This search engine will be your new best friend as a developer.</p>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer footer-modal-footer">
+                  <button type="button" class="btn text-white" data-dismiss="modal">Close</button>
+                  <a href="https://www.google.com" target="_blank"><button type="button" class="btn btn-primary">Visit Site</button></a>
                 </div>
               </div>
             </div>
         </div>
 
     </footer>
-
-    
 
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
