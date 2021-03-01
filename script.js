@@ -1,3 +1,41 @@
+
+$(document).ready(function(){
+    $('#schedule').on('click',function(){
+    $('.modal-tutor').show();
+})
+
+$('.close').on('click', function(){
+    $('.modal-tutor').hide();
+})
+})
+
+$("#apptconfirm").on('click', function(){
+    console.log("click");
+
+    var timeInput= $("#timeInput").val();
+    var apptDate = $("#dateselect").val();
+
+    $('#apptconfirm').hide();
+    
+    var confirmMsg = $("<p></p>").text("Your appointment is scheduled for " + apptDate + "at " + timeInput);
+
+    $("#confirmdiv").append(confirmMsg);
+
+        
+})
+
+
+
+
+    
+    
+
+
+
+
+
+
+
 // add youtube api
 // add youtube search bar 
 // add result menu 
