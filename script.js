@@ -1,28 +1,41 @@
-
+// $.clearFormFields = function(area) {
+//     $(area).find('input[type="text"],input[type="email"],textarea,select').val('');
+//   };
 //tutor modal card scheduling function
 
 $(document).ready(function(){
-    $('#schedule').on('click',function(){
+    $('.schedule').on('click',function(){
     $('.modal-tutor').show();
 })
 
 $('.close').on('click', function(){
+    
+    
     $('.modal-tutor').hide();
 })
 })
 
 $("#apptconfirm").on('click', function(){
     console.log("click");
+    var modalState = $(this).find(".schedule")
+    console.log(modalState)
+    if(modalState === "close") {
+        $("#apptconfirm").show()
+        $(".schedule").data("modal", "open")
+    } else {
+        $("#apptconfirm").hide()
+        $(".schedule").data("modal", "close")
+    }
 
-    var timeInput= $("#timeInput").val();
-    var apptDate = $("#dateselect").val();
+    var timeInput= $(".timeInput").val();
+    var apptDate = $(".dateselect").val();
     
     $('#apptconfirm').hide();
-
+    $(".schedule").data("modal", "close")
     console.log(timeInput)
     console.log(apptDate)
 
-    if($('#dateselect').val() === '' || $('#timeInput').val()=== 'Choose a Time'){
+    if($('.dateselect').val() === '' || $('.timeInput').val()=== 'Choose a Time'){
         
         var failMsg = $("<p></p>").text("Please choose a date from the calendar and/or a time slot from the dropdown");
         $("#confirmdiv").append(failMsg);
@@ -35,8 +48,9 @@ $("#apptconfirm").on('click', function(){
 
     
 
-    $("#apptconfirm").reset();
     
+$(".timeInput").val("")
+$(".dateselect").val("")
     
 
         
@@ -67,7 +81,7 @@ function getYoutubeAPI(searchTerm) {
 
         for (var i=0; i < 4; i++){
             var videoId = data.items[i].id.videoId
-        $("#video-content").append('<iframe class="col-md-6" width="420" height="345" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0″ allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+        $("#video-content").append('<iframe class="col-md-6 justify-content=center" width="420" height="345" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0″ allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
 
 
 

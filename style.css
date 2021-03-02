@@ -85,8 +85,10 @@ body {
 }
 
 #video-content {
-    margin-top: 96px;
+    margin-top: 38px;
     padding: 49px 5px 3px 50px;
+    margin-left: 21rem;
+    margin-right: -10rem;
 }
 
 
