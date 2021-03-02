@@ -12,7 +12,7 @@
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <title>Resources</title>
+    <title>Student Resource Center</title>
 </head>
 <body>
 
@@ -20,20 +20,52 @@
 
     <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
 
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger text-white" href="./index.html">Tutor Database</a>
-            <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-white" href="#">Student Login</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-white" href="#">Tutor Login</a></li>
-                </ul>
-            </div>
+      <div class="container">
+          <a class="navbar-brand js-scroll-trigger text-white" href="./index.html">Tutor Database</a>
+          <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <!-- <button class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-white">Student Login</a></button> -->
+                <button type="button" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-white" data-toggle="modal" data-target="#exampleModal">Student Login</button>
+                
+                <button type="button" class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-white" data-toggle="modal" data-target="#exampleModal">Tutor Login</button>
+              </ul>
+          </div>
+      </div>
+  </nav>
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-    </nav>
+        <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Forgot Password</button>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
         <aside class="form-floating bg-secondary" id="main-section-resource">
             <select class="form-select row-resource" id="floatingSelect" aria-label="Floating label select example">
