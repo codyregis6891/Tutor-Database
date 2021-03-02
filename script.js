@@ -67,7 +67,7 @@ function getYoutubeAPI(searchTerm) {
 
         for (var i=0; i < 4; i++){
             var videoId = data.items[i].id.videoId
-        $("#video-content").append('<iframe class="col-md-6" width="420" height="345" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0″ allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+        $("#video-content").append('<iframe class="col-md-6 justify-content=center" width="420" height="345" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0″ allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
 
 
 
