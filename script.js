@@ -5,6 +5,15 @@
 
 $(document).ready(function(){
     $('.schedule').on('click',function(){
+        var modalState = $(this).data("modal")
+    console.log(modalState)
+    if(modalState === "close") {
+        $("#apptconfirm").show()
+        $(".schedule").data("modal", "open")
+    } else {
+        $("#apptconfirm").hide()
+        $(".schedule").data("modal", "close")
+    }
     $('.modal-tutor').show();
 })
 
@@ -17,15 +26,7 @@ $('.close').on('click', function(){
 
 $("#apptconfirm").on('click', function(){
     console.log("click");
-    var modalState = $(this).find(".schedule")
-    console.log(modalState)
-    if(modalState === "close") {
-        $("#apptconfirm").show()
-        $(".schedule").data("modal", "open")
-    } else {
-        $("#apptconfirm").hide()
-        $(".schedule").data("modal", "close")
-    }
+    
 
     var timeInput= $(".timeInput").val();
     var apptDate = $(".dateselect").val();
