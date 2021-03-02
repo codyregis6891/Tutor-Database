@@ -1,28 +1,42 @@
-
+// $.clearFormFields = function(area) {
+//     $(area).find('input[type="text"],input[type="email"],textarea,select').val('');
+//   };
 //tutor modal card scheduling function
 
 $(document).ready(function(){
-    $('#schedule').on('click',function(){
+    $('.schedule').on('click',function(){
+        var modalState = $(this).data("modal")
+    console.log(modalState)
+    if(modalState === "close") {
+        $("#apptconfirm").show()
+        $(".schedule").data("modal", "open")
+    } else {
+        $("#apptconfirm").hide()
+        $(".schedule").data("modal", "close")
+    }
     $('.modal-tutor').show();
 })
 
 $('.close').on('click', function(){
+    
+    
     $('.modal-tutor').hide();
 })
 })
 
 $("#apptconfirm").on('click', function(){
     console.log("click");
+    
 
-    var timeInput= $("#timeInput").val();
-    var apptDate = $("#dateselect").val();
+    var timeInput= $(".timeInput").val();
+    var apptDate = $(".dateselect").val();
     
     $('#apptconfirm').hide();
-
+    $(".schedule").data("modal", "close")
     console.log(timeInput)
     console.log(apptDate)
 
-    if($('#dateselect').val() === '' || $('#timeInput').val()=== 'Choose a Time'){
+    if($('.dateselect').val() === '' || $('.timeInput').val()=== 'Choose a Time'){
         
         var failMsg = $("<p></p>").text("Please choose a date from the calendar and/or a time slot from the dropdown");
         $("#confirmdiv").append(failMsg);
@@ -35,8 +49,9 @@ $("#apptconfirm").on('click', function(){
 
     
 
-    $("#apptconfirm").reset();
     
+$(".timeInput").val("")
+$(".dateselect").val("")
     
 
         
